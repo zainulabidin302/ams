@@ -12,3 +12,7 @@
 */
 
 Auth::routes();
+Route::prefix('/app')->group(function() {
+    Route::get('/', 'SinglePageController@index')->where('any', '.*');
+    Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
+});
