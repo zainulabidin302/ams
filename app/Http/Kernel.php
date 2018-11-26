@@ -19,10 +19,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
-<<<<<<< HEAD
         \Barryvdh\Cors\HandleCors::class,
-=======
->>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
     ];
 
     /**
@@ -44,10 +41,7 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
             'bindings',
-<<<<<<< HEAD
             \Barryvdh\Cors\HandleCors::class,
-=======
->>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
         ],
     ];
 
@@ -68,20 +62,12 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-<<<<<<< HEAD
-=======
-        'cors' => \App\Http\Middleware\Cors::class,
->>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
     ];
 
     /**
      * The priority-sorted list of middleware.
      *
-<<<<<<< HEAD
      * This forces non-global middleware to always be in the given order.
-=======
-     * This forces the listed middleware to always be in the given order.
->>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
      *
      * @var array
      */
