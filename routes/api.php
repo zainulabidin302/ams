@@ -22,10 +22,6 @@ Route::post('register', 'PassportController@register');
 Route::resource('course','ClassRoomController');
 Route::resource('assignment','AssignmentController');
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-//
-// });
 Route::middleware('auth:api')->get('/user',function(){
   return User::all();
 });
