@@ -13,7 +13,11 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+<<<<<<< HEAD
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+=======
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->

@@ -32,7 +32,10 @@ return [
     'boolean' => 'The :attribute field must be true or false.',
     'confirmed' => 'The :attribute confirmation does not match.',
     'date' => 'The :attribute is not a valid date.',
+<<<<<<< HEAD
     'date_equals' => 'The :attribute must be a date equal to :date.',
+=======
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
     'digits' => 'The :attribute must be :digits digits.',

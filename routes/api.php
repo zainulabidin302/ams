@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+<<<<<<< HEAD
 
 use App\User;
 
@@ -28,4 +29,11 @@ Route::resource('assignment','AssignmentController');
 // });
 Route::middleware('auth:api')->get('/user',function(){
   return User::all();
+=======
+use App\User;
+Route::group(['middleware'=>['cors']],function(){
+  Route::get('/users','RestController@viewUsers');
+});
+Route::group(['middleware'=> ['auth:api'] ],function(){
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
 });

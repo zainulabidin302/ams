@@ -1,5 +1,6 @@
 {
     "name": "laravel/laravel",
+<<<<<<< HEAD
     "type": "project",
     "description": "The Laravel Framework.",
     "keywords": [
@@ -15,6 +16,16 @@
         "jenssegers/mongodb": "^3.4",
         "laravel/framework": "5.7.*",
         "laravel/passport": "^7.0",
+=======
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.1.3",
+        "fideloper/proxy": "^4.0",
+        "laravel/framework": "5.7.*",
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
         "laravel/tinker": "^1.0"
     },
     "require-dev": {
@@ -25,6 +36,7 @@
         "nunomaduro/collision": "^2.0",
         "phpunit/phpunit": "^7.0"
     },
+<<<<<<< HEAD
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
@@ -43,12 +55,23 @@
             "database/seeds",
             "database/factories"
         ]
+=======
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
         }
     },
+<<<<<<< HEAD
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
@@ -56,11 +79,36 @@
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
         ],
+=======
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "scripts": {
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+<<<<<<< HEAD
         ]
     }
+=======
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
 }

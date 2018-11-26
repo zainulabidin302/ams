@@ -11,6 +11,7 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +19,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+=======
+Auth::routes();
+Route::prefix('/app')->group(function() {
+    Route::get('/', 'SinglePageController@index')->where('any', '.*');
+    Route::get('/{any}', 'SinglePageController@index')->where('any', '.*');
+});
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46

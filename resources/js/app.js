@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -31,3 +32,30 @@ Vue.component('example-component', require('./components/ExampleComponent.vue'))
 const app = new Vue({
     el: '#app'
 });
+=======
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+import App from './../views/App.vue'
+import About from './../views/About.vue'
+import User from './../views/User.vue'
+
+// import Welcome from './views/Welcome'
+
+const router = new VueRouter({
+    mode: 'history',
+    routes: [
+        {path: '/app', component: App, children: [
+            {path: 'user', component: User},
+        ] }
+    ],
+});
+
+const app = new Vue({
+    el: '#app',
+    router,
+    
+});
+>>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
