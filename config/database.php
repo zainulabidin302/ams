@@ -13,11 +13,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'default' => env('DB_CONNECTION', 'mongodb'),
-=======
-    'default' => env('DB_CONNECTION', 'mysql'),
->>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
 
     /*
     |--------------------------------------------------------------------------
@@ -85,7 +81,6 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
-<<<<<<< HEAD
         'mongodb' => [
         'driver'   => 'mongodb',
         'host'     => env('DB_HOST', 'localhost'),
@@ -97,9 +92,6 @@ return [
             'database' => 'admin' // sets the authentication database required by mongo 3
         ]
       ],
-=======
->>>>>>> 6320fa133e4d7a17e9e39145663d6b55f2083a46
-
     ],
 
     /*
